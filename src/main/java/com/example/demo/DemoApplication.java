@@ -24,11 +24,4 @@ public class DemoApplication {
 //		return "Welcome to Home Page";
 //
 //	}
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> 2bee9d5c95badcaf08ac72a7f61e82d100e8453c
 }
