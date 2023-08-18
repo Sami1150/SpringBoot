@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="myscripts.js"></script>
+    <script>
+        fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    });
+    </script>
+</head>
+
+<body>
+
+<section class="contact-us" id="contact-section">
+    <form id="contact" action="" method="post">
+
+        <div class="section-heading">
+            <h4>Contact us</h4>
+        </div>
+
+        <div class="inputField">
+            <input type="name" name="name" id="name" placeholder="Your name" autocomplete="on" required>
+            <span class="valid_info_name"></span>
+        </div>
+
+        <div class="inputField">
+            <input type="Email" name="email" id="email" placeholder="Your email" required="" />
+            <span class="valid_info_email"></span>
+        </div>
+
+        <div class="inputField">
+            <textarea name="message" id="message" placeholder="Your message"></textarea>
+            <span class="valid_info_message"></span>
+        </div>
+
+        <div class="inputField btn">
+            <button type="submit" id="form-submit" class="main-gradient-button" disabled>Send a message</button>
+        </div>
+
+    </form>
+</section>
+
+
+<div id="footer-placeholder"></div>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+</body>
+
+</html>
