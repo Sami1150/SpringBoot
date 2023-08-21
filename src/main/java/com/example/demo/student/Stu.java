@@ -2,14 +2,14 @@ package com.example.demo.student;
 
 import java.time.LocalDate;
 
-public class Student {
+public class Stu {
     private int id;
     private String name;
     private String email;
     private LocalDate dob;
     private Integer age;
 
-    public Student(int id, String name, String email, LocalDate dob, Integer age) {
+    public Stu(int id, String name, String email, LocalDate dob, Integer age) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -17,7 +17,7 @@ public class Student {
         this.age = age;
     }
 
-    public Student(String name, String email, LocalDate dob, Integer age) {
+    public Stu(String name, String email, LocalDate dob, Integer age) {
         this.name = name;
         this.email = email;
         this.dob = dob;
