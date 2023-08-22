@@ -1,7 +1,11 @@
 
 package com.example.demo.teacher;
 
+import jakarta.persistence.Id;
+
 public class Teacher {
+
+    @Id
     private int id;
     private String course;
     private int salary;

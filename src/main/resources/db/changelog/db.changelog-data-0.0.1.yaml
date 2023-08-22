@@ -1,0 +1,77 @@
+databaseChangeLog:
+  - changeSet:
+      id: data-0.0.1
+      author: student team
+      changes:
+        - insert:
+            tableName: student
+            columns:
+              - column:
+                  name: id
+                  value: '1'
+              - column:
+                  name: name
+                  value: John Doe
+              - column:
+                  name: email
+                  value: john@example.com
+              - column:
+                  name: dob
+                  value: '2000-01-01T12:00:00'
+              - column:
+                  name: age
+                  value: '21'
+        - insert:
+            tableName: student
+            columns:
+              - column:
+                  name: id
+                  value: '2'
+              - column:
+                  name: name
+                  value: Jane Smith
+              - column:
+                  name: email
+                  value: jane@example.com
+              - column:
+                  name: dob
+                  value: '1999-05-15T10:30:00'
+              - column:
+                  name: age
+                  value: '22'
+        - insert:
+            tableName: student
+            columns:
+              - column:
+                  name: id
+                  value: '3'
+              - column:
+                  name: name
+                  value: Michael Johnson
+              - column:
+                  name: email
+                  value: michael@example.com
+              - column:
+                  name: dob
+                  value: '2002-09-30T15:45:00'
+              - column:
+                  name: age
+                  value: '19'
+        - insert:
+            tableName: student
+            columns:
+              - column:
+                  name: id
+                  value: '4'
+              - column:
+                  name: name
+                  value: Sami Ahmad
+              - column:
+                  name: email
+                  value: sami@example.com
+              - column:
+                  name: dob
+                  value: '2001-10-04T15:45:00'
+              - column:
+                  name: age
+                  value: '22'

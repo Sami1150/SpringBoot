@@ -1,15 +1,23 @@
 package com.example.demo.student;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 import java.time.LocalDate;
 
-public class Stu {
+@Entity
+@Table
+public class Student {
+
+    @Id
     private int id;
     private String name;
     private String email;
     private LocalDate dob;
     private Integer age;
 
-    public Stu(int id, String name, String email, LocalDate dob, Integer age) {
+    public Student(int id, String name, String email, LocalDate dob, Integer age) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -17,7 +25,7 @@ public class Stu {
         this.age = age;
     }
 
-    public Stu(String name, String email, LocalDate dob, Integer age) {
+    public Student(String name, String email, LocalDate dob, Integer age) {
         this.name = name;
         this.email = email;
         this.dob = dob;
@@ -62,5 +70,16 @@ public class Stu {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", dob=" + dob +
+                ", age=" + age +
+                '}';
     }
 }
